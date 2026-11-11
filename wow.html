@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La historia de Eréndira</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e8d9bd;
+            color: #382719;
+            font-family: "Comic Sans MS", cursive;
+        }
+
+        header {
+            background-color: #55351f;
+            color: #f8ead3;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            font-size: 35px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #b88755;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #29190f;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 8px 12px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        main {
+            max-width: 950px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #f5ead7;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 12px;
+            box-shadow: 0 3px 8px #00000020;
+        }
+
+        h2 {
+            color: #754523;
+            border-bottom: 2px solid #b88755;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #8a5b32;
+        }
+
+        p, li {
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .imagen {
+            display: block;
+            max-width: 100%;
+            width: 350px;
+            max-height: 300px;
+            object-fit: cover;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .portada {
+            width: 260px;
+            max-height: 360px;
+        }
+
+        .personajes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .personaje {
+            flex: 1 1 240px;
+            padding: 15px;
+            background-color: #ead7b9;
+            border-radius: 10px;
+        }
+
+        .personaje img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #55351f;
+            color: #f8ead3;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #f8ead3;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 27px;
+            }
+
+            nav a {
+                margin: 6px;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            section {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>La increíble y triste historia de la cándida Eréndira y de su abuela desalmada</h1>
+        <p>Un relato de Gabriel García Márquez</p>
+    </header>
+
+    <nav>
+        <a href="#autor">El autor</a>
+        <a href="#relato">El relato</a>
+        <a href="#personajes">Personajes</a>
+        <a href="#temas">Temas</a>
+        <a href="#conclusion">Conclusión</a>
+    </nav>
+
+    <main>
+
+        <section id="autor">
+            <h2>El autor: Gabriel García Márquez</h2>
+
+            <p>
+                Gabriel García Márquez fue un escritor y periodista colombiano,
+                nacido en 1927. Es uno de los autores más importantes de la
+                literatura latinoamericana y una figura destacada del realismo
+                mágico. En 1982 recibió el Premio Nobel de Literatura.
+            </p>
+
+            <p>
+                Entre sus obras más conocidas se encuentran
+                <i>Cien años de soledad</i> y
+                <i>El amor en los tiempos del cólera</i>.
+                Sus historias mezclan situaciones cotidianas con elementos
+                extraordinarios.
+            </p>
+
+            <img class="imagen"
+                 src="imagenes/gabriel.jpg"
+                 alt="Gabriel García Márquez">
+
+        </section>
+
+        <section id="relato">
+            <h2>¿De qué trata el relato?</h2>
+
+            <p>
+                La historia cuenta la vida de Eréndira, una adolescente que
+                vive con su abuela y se encarga de todas las tareas de la casa.
+                Su vida cambia cuando, debido a un accidente, la mansión en
+                la que viven termina incendiada.
+            </p>
+
+            <p>
+                La abuela culpa a Eréndira por la pérdida de sus bienes y la
+                obliga a trabajar para pagar una deuda que parece interminable.
+                Para conseguir dinero, la explota y la obliga a prostituirse
+                mientras recorren diferentes pueblos.
+            </p>
+
+            <p>
+                Durante ese viaje, Eréndira conoce a Ulises, un joven que se
+                enamora de ella e intenta ayudarla a escapar. Sin embargo,
+                la abuela no quiere perder el control sobre su nieta y hace
+                todo lo posible para mantenerla bajo su dominio.
+            </p>
+
+            <p>
+                El relato muestra el sufrimiento de Eréndira y su lucha por
+                conseguir la libertad. El desenlace ocurre cuando Ulises
+                finalmente mata a la abuela y Eréndira huye sola, llevándose
+                las prendas de oro y sin mirar atrás.
+            </p>
+
+            <img class="imagen portada"
+                 src="imagenes/libro.jpg"
+                 alt="Portada del libro">
+
+        </section>
+
+        <section id="personajes">
+            <h2>Los personajes principales</h2>
+
+            <div class="personajes">
+
+                <div class="personaje">
+                    <h3>Eréndira</h3>
+                    <img src="imagenes/erendira.jpg"
+                         alt="Representación de Eréndira">
+                    <p>
+                        Es la protagonista. Una joven que sufre la explotación
+                        de su abuela y que, a lo largo de la historia, busca
+                        escapar de esa vida y alcanzar su libertad.
+                    </p>
+                </div>
+
+                <div class="personaje">
+                    <h3>La abuela</h3>
+                    <img src="imagenes/abuela.jpg"
+                         alt="Representación de la abuela">
+                    <p>
+                        Es una mujer autoritaria y cruel que obliga a Eréndira
+                        a pagar la deuda de la casa. Representa el abuso de
+                        poder y la explotación.
+                    </p>
+                </div>
+
+                <div class="personaje">
+                    <h3>Ulises</h3>
+                    <img src="imagenes/ulises.jpg"
+                         alt="Representación de Ulises">
+                    <p>
+                        Es el joven que se enamora de Eréndira. Intenta
+                        rescatarla de su abuela y ayudarla a conseguir una
+                        vida diferente.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="temas">
+            <h2>Los temas principales</h2>
+
+            <h3>La explotación</h3>
+            <p>
+                La abuela utiliza a Eréndira para conseguir dinero y la trata
+                como si fuera una propiedad, sin respetar sus derechos.
+            </p>
+
+            <h3>La libertad</h3>
+            <p>
+                Eréndira vive bajo el control de su abuela y busca una manera
+                de escapar de esa situación. Su huida final representa el
+                intento de recuperar su propia vida.
+            </p>
+
+            <h3>El amor</h3>
+            <p>
+                La relación entre Eréndira y Ulises representa una posibilidad
+                de afecto y de escape frente a la violencia que ella sufre.
+            </p>
+
+            <h3>El realismo mágico</h3>
+            <p>
+                El relato presenta situaciones extraordinarias dentro de un
+                mundo narrado con naturalidad. Esto crea una atmósfera en la
+                que lo extraño y lo cotidiano aparecen mezclados.
+            </p>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusión</h2>
+
+            <p>
+                En conclusión, este relato muestra las consecuencias de la
+                explotación y del abuso de poder. Eréndira vive una situación
+                injusta en la que su abuela decide sobre su cuerpo y su futuro.
+            </p>
+
+            <p>
+                A pesar de todo lo que sufre, el final representa la ruptura
+                con esa relación de dominio. La historia invita a reflexionar
+                sobre la libertad, la dignidad y el derecho de cada persona
+                a decidir sobre su propia vida.
+            </p>
+
+            <p>
+                Me parece una historia triste e impactante porque muestra
+                hasta dónde puede llegar una persona cuando quiere controlar
+                a otra.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Trabajo sobre Gabriel García Márquez</p>
+        <p>Literatura latinoamericana</p>
+    </footer>
+
+</body>
+</html>
